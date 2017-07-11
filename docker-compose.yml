@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  blog:
+    image: ghost:latest
+    volumes:
+      - ./data:/var/lib/ghost
+    ports:
+      - "${PORT}:2368"
+
